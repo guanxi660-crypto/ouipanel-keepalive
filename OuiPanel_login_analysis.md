@@ -81,7 +81,7 @@
 | `GET https://ouipanel.com/auth/oauth/whmcs` | 获取 WHMCS OAuth 授权链接 |
 | `GET https://ouipanel.com/auth/oauth/whmcs/callback` | OAuth 回调，建立 session |
 | `GET https://ouipanel.com/auth/login` | 登录中转页（含 "Connexion" 按钮） |
-| `POST https://ouipanel.com/api/client/servers/df36f0e3/power` | 电源控制，body `{"signal":"restart"|"start"}` |
+| `POST https://ouipanel.com/api/client/servers/*****/power` | 电源控制，body `{"signal":"restart"|"start"}` |
 | `GET https://ouipanel.com/api/client/news` 等 | 业务 API |
 
 ## 三、Console 页面电源按钮（实测）
@@ -98,7 +98,7 @@
 - 点击侧边栏电源按钮**无确认弹窗**，直接发送：
 
   ```http
-  POST https://ouipanel.com/api/client/servers/df36f0e3/power
+  POST https://ouipanel.com/api/client/servers/*****/power
   Content-Type: application/json
 
   {"signal":"restart"}   # 或 {"signal":"start"}
