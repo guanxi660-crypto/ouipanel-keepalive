@@ -1,6 +1,6 @@
 # OuiPanel 页面结构与自动保活方案
 
-> 目标 URL：`https://dash.ouipanel.com/server/df36f0e3/console`
+> 目标 URL：`https://dash.ouipanel.com/server/******/console`
 > 首次分析：2026-09-05 ｜ 实测自动化验证：2026-09-05（成功）
 
 ## 一、页面结构
